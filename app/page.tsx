@@ -1,4 +1,5 @@
-import Heading from "./components/heading";
+import Button from "./components/button/Button";
+import Heading from "./components/heading/Heading";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Heading size="large" lined>
           A cool title
         </Heading>
+        <Button variant="outlined">Click me</Button>
       </div>
     </main>
   );

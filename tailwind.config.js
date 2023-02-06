@@ -19,6 +19,10 @@ module.exports = {
       fontFamily: {
         sans: ["--font-mont", ...defaultTheme.fontFamily.sans],
       },
+      boxShadow: {
+        "btn-hover": "0.4rem 0.4rem 0 #2d96d1",
+        "btn-active": "0 0 0 #2d96d1",
+      },
     },
   },
   plugins: [],
