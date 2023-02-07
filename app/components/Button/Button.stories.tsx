@@ -1,7 +1,8 @@
-import Button from "./Button";
 import { Args, Meta, StoryObj } from "@storybook/react";
 import Image from "next/image";
-import linkedin from "@/public/linkedin.svg";
+
+import Button from "./Button";
+import linkedin from "@/public/icons/linkedin.svg";
 
 const meta: Meta<typeof Button> = {
   component: Button,

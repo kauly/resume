@@ -22,6 +22,7 @@ module.exports = {
       boxShadow: {
         "btn-hover": "0.4rem 0.4rem 0 #2d96d1",
         "btn-active": "0 0 0 #2d96d1",
+        box: "0.4rem 0.4rem 0 #111111",
       },
     },
   },

@@ -36,7 +36,7 @@ export default function Button({
 }: IButtonProps) {
   return (
     <button
-      className={`font-medium font-bold tracking-wider uppercase inline-flex items-center ${classes[size]} ${variants[variant]}`}
+      className={`font-bold tracking-wider uppercase inline-flex items-center w-fit ${classes[size]} ${variants[variant]}`}
       {...props}
     >
       {iconLeft && <span className="mr-2">{iconLeft}</span>}
