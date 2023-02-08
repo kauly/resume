@@ -102,35 +102,35 @@ export default function Home() {
               companyUrl="https://www.linkedin.com/company/sortium/"
               date="Apr 2021 - Feb 2023"
               position="Full Stack Developer"
-              description="Here I work as a full-stack developer, using React, NextJs, Hasura, and Firebase. During this time I participate in the development of two NFT marketplace.I am also started to learn Rust and use Bevy to develop games."
+              description="Here I work as a full-stack developer, using React, NextJs, Hasura, and Firebase. During this time I participate in the development of two NFT marketplaces. I also started to learn Rust and use Bevy to develop games."
             />
             <ExperienceItem
               company="Freelancer"
               companyUrl="https://starwars.fandom.com/wiki/Galactic_Empire"
               date="Mar 2020 - Apt 2021"
               position="Full Stack Developer"
-              description="I worked as a freelancer, developing websites and web applications for small and medium businesses. All jobs with React. I spent most of this time working for the same client developing a real time chat application for customer services. This chat is used by thousands of people daily in Brazil."
+              description="I worked as a freelancer, developing websites and web applications for small and medium businesses. All jobs with React. I spent most of this time working for the same client developing a real-time chat application for customer services. This chat is used by thousands of people daily in Brazil."
             />
             <ExperienceItem
               company="iTER"
               companyUrl="https://www.linkedin.com/company/iter-software-de-rastreamento-e-telemetria/"
               date="Aug 2019 - Mar 2020"
               position="Frontend Developer"
-              description="Working doing maintenance and new features for the company's main product, a web application for fleet management. I also worked on the development of a new product, a system to track all things and not only vehicles. This company was sold to a big company in a million dollar deal here in Brazil"
+              description="Working doing maintenance and new features for the company's main product, a web application for fleet management. I also worked on the development of a new product, a system to track all things and not only vehicles. This company was sold to a big company in a million-dollar deal here in Brazil"
             />
             <ExperienceItem
               company="tdsoft"
               companyUrl="https://www.linkedin.com/company/tdsmediatechnology/"
               date="Mar 2019 - Aug 2019"
               position="Frontend Developer"
-              description="Work on the team responsible for switch the company main product from Java to React and Next."
+              description="Work on the team responsible for switching the company main product from Java to React and Next."
             />
             <ExperienceItem
               company="Gesec"
               companyUrl="https://www.linkedin.com/company/gesec-sistemas/"
               date="Sep 2018 - Feb 2019"
               position="Fullstack Developer"
-              description="This company had a software used by security forces, it was a map based real time application to manage occurrences. Mainly, React, Redux, Mapbox, MongoDB and Express were used to develop this application."
+              description="This company had software used by security forces, it was a map-based real-time application to manage occurrences. Mainly, React, Redux, Mapbox, MongoDB, and Express were used to develop this application."
             />
             <ExperienceItem
               company="GETMORE"
