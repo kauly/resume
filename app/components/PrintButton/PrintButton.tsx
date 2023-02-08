@@ -7,7 +7,7 @@ import printIcon from "@/public/icons/print.svg";
 
 export default function PrintButton() {
   return (
-    <Button variant="ghost" onClick={() => window.print()}>
+    <Button size="small" variant="ghost" onClick={() => window.print()}>
       <Icon src={printIcon} alt="Print Icon" />
     </Button>
   );
