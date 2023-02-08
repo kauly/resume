@@ -1,11 +1,16 @@
-import Heading from "./Heading";
-import { Args } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
-export default {
+import Heading from "./Heading";
+
+const meta: Meta<typeof Heading> = {
   component: Heading,
   title: "components/Heading",
 };
 
-export const Default = {
-  render: (args: Args) => <Heading {...args}>A cool heading</Heading>,
+export default meta;
+
+type Story = StoryObj<typeof Heading>;
+
+export const Default: Story = {
+  render: (args) => <Heading {...args}>A cool heading</Heading>,
 };

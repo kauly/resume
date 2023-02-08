@@ -1,6 +1,8 @@
 "use client";
+
 import { useState } from "react";
 import Image from "next/image";
+
 import copyIcon from "@/public/icons/copy.svg";
 import checkIcon from "@/public/icons/check.svg";
 

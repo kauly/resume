@@ -27,7 +27,7 @@ export default function Link({
       {leftIcon}
       <a
         className={clsx(
-          "text-base font-medium tracking-wider truncate align-bottom hover:underline",
+          "text-base font-bold tracking-wider truncate align-bottom hover:underline",
           colorsStyle[color]
         )}
         target="_blank"

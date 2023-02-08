@@ -1,11 +1,17 @@
+import { Meta, StoryObj } from "@storybook/react";
+
 import ExpirenceItem from "./ExperienceItem";
 
-export default {
+const meta: Meta<typeof ExpirenceItem> = {
   component: ExpirenceItem,
   title: "components/ExpirenceItem",
 };
 
-export const Default = {
+export default meta;
+
+type Story = StoryObj<typeof ExpirenceItem>;
+
+export const Default: Story = {
   render: () => (
     <ExpirenceItem
       company="Galactic Empire"
