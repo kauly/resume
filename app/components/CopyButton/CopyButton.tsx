@@ -24,7 +24,10 @@ export default function CopyButton({ targetId }: ICopyButtonProps) {
   };
 
   return (
-    <button className="text-blue p-1 pointer" onClick={copyToClipboard}>
+    <button
+      className="text-blue p-1 pointer no-print"
+      onClick={copyToClipboard}
+    >
       <Image
         src={isCopied ? checkIcon : copyIcon}
         alt="Copy"

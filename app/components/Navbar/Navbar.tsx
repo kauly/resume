@@ -1,8 +1,7 @@
-import Icon from "../Icon/Icon";
-import { Fragment, ReactNode } from "react";
+import { ReactNode } from "react";
 
 import Link from "@/app/components/Link/Link";
-import PrintButton from "@/app/components/PrintButton/PrintButton";
+import Icon from "@/app/components/Icon/Icon";
 
 import githubIcon from "@/public/icons/github.svg";
 import linkedinIcon from "@/public/icons/linkedin.svg";
@@ -25,7 +24,7 @@ export function NavItem({ children }: INavItemProps) {
 
 export default function Navbar({ left }: INavProps) {
   return (
-    <nav className="flex items-center w-full h-16 shadow-md bg-beige space-x-2 px-8">
+    <nav className="flex items-center w-full h-16 shadow-md bg-beige space-x-2 px-4 md:px-8 no-print">
       {left ? left : undefined}
       <span className="flex-1" />
       <NavItem>
