@@ -3,6 +3,7 @@ import InfoItem from "@/app/components/InfoItem/InfoItem";
 import Profile from "@/app/components/Profile/Profile";
 import ExperienceItem from "@/app/components/ExperienceItem/ExperienceItem";
 import Navbar from "@/app/components/Navbar/Navbar";
+import PrintButton from "@/app/components/PrintButton/PrintButton";
 
 import emailIcon from "@/public/icons/email.svg";
 import phoneIcon from "@/public/icons/phone.svg";
@@ -14,7 +15,7 @@ import ageIcon from "@/public/icons/age.svg";
 export default function Home() {
   return (
     <main className="flex flex-col h-full bg-white pb-8">
-      <Navbar />
+      <Navbar left={<PrintButton />} />
       <div className="h-[400px] bg-beige flex justify-center items-center">
         <Profile />
       </div>

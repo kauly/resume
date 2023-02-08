@@ -1,12 +1,18 @@
 import Icon from "../Icon/Icon";
-import Link from "../Link/Link";
+import { Fragment, ReactNode } from "react";
+
+import Link from "@/app/components/Link/Link";
+import PrintButton from "@/app/components/PrintButton/PrintButton";
+
 import githubIcon from "@/public/icons/github.svg";
 import linkedinIcon from "@/public/icons/linkedin.svg";
-import printIcon from "@/public/icons/print.svg";
-import { ReactNode } from "react";
 
 interface INavItemProps {
   children: ReactNode;
+}
+
+interface INavProps {
+  left?: ReactNode;
 }
 
 export function NavItem({ children }: INavItemProps) {
@@ -17,12 +23,10 @@ export function NavItem({ children }: INavItemProps) {
   );
 }
 
-export default function Navbar() {
+export default function Navbar({ left }: INavProps) {
   return (
     <nav className="flex items-center w-full h-16 shadow-md bg-beige space-x-2 px-8">
-      <NavItem>
-        <Icon src={printIcon} alt="Print Icon" />
-      </NavItem>
+      {left ? left : undefined}
       <span className="flex-1" />
       <NavItem>
         <Link href="https://www.linkedin.com/in/kauly-bohm-219b9715a">
