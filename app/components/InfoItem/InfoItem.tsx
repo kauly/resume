@@ -29,7 +29,7 @@ export default function InfoItem({
       </span>
       {linkUrl ? (
         <a
-          className="text-base font-medium tracking-wider truncate text-black align-bottom visited:text-blue hover:underline"
+          className="text-base font-medium tracking-wider truncate text-black align-bottom visited:text-blue hover:underline "
           target="_blank"
           rel="noopener noreferrer"
           href={linkUrl}
@@ -40,7 +40,7 @@ export default function InfoItem({
       ) : (
         <span
           id={value}
-          className="text-base font-medium tracking-wider text-black align-bottom"
+          className="text-base font-medium tracking-wider text-black align-bottom "
         >
           {value}
         </span>
