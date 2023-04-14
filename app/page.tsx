@@ -30,7 +30,7 @@ export default function Home() {
             other plans though and after high school, I took a variety of random
             jobs, military, factory line, TI guy, call center, etc. Finally,
             about five years ago, on a blessed day, I resolved to dedicate all
-            my efforts to learning how to code professionally. Man, it's been so
+            my efforts to learning how to code professionally. It's been so
             rewarding, I started as an intern but things escalated quickly. The
             journey brings me opportunities to work with amazing people and make
             products used by hundreds of people worldwide. I am very grateful
@@ -103,12 +103,12 @@ export default function Home() {
               companyUrl="https://www.linkedin.com/company/sortium/"
               date="Apr 2021 - Feb 2023"
               position="Full Stack Developer"
-              description="Here I work as a full-stack developer, using React, NextJs, Hasura, and Firebase. During this time I participate in the development of two NFT marketplaces. I also started to learn Rust and use Bevy to develop games."
+              description="I worked as a full-stack developer, using React, NextJs, Hasura, and Firebase. During this time I participate in the development of two NFT marketplaces. I also started to learn Rust and use Bevy to develop games."
             />
             <ExperienceItem
               company="Freelancer"
               companyUrl="https://starwars.fandom.com/wiki/Galactic_Empire"
-              date="Mar 2020 - Apt 2021"
+              date="Mar 2020 - Apr 2021"
               position="Full Stack Developer"
               description="I worked as a freelancer, developing websites and web applications for small and medium businesses. All jobs with React. I spent most of this time working for the same client developing a real-time chat application for customer services. This chat is used by thousands of people daily in Brazil."
             />
