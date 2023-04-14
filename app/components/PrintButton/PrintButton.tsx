@@ -9,8 +9,8 @@ const isMobile = () => window.matchMedia && window.matchMedia("(max-width: 480px
 const downloadFile = () => {
   const link = document.createElement("a");
   link.style.display = "none";
-  link.href = 'Kauly_Resume.pdf'
-  link.download = 'Kauly_Resume.pdf';
+  link.href = 'kauly_resume.pdf'
+  link.download = 'kauly_resume.pdf';
 
   document.body.appendChild(link);
   link.click();
