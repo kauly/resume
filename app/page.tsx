@@ -12,7 +12,7 @@ import githubIcon from "@/public/icons/github.svg";
 import linkedinIcon from "@/public/icons/linkedin.svg";
 import ageIcon from "@/public/icons/age.svg";
 
-export default function Home() {
+ export default function Home() {
   return (
     <main className="flex flex-col h-full bg-white pb-8">
       <Navbar left={<PrintButton />} />
@@ -25,27 +25,23 @@ export default function Home() {
             About me
           </Heading>
           <p className="text-lg">
-            I had been playing around with coding for a long time, for instance,
-            I have programming courses from more than 10 years ago. Life had
-            other plans though and after high school, I took a variety of random
-            jobs, military, factory line, TI guy, call center, etc. Finally,
-            about five years ago, on a blessed day, I resolved to dedicate all
-            my efforts to learning how to code professionally. It's been so
-            rewarding, I started as an intern but things escalated quickly. The
-            journey brings me opportunities to work with amazing people and make
+            I have been interested in coding for many years and I completed my first coding qualification more than 10 years ago. 
+            Although I have had a variety of jobs in the past, coding has always been my passion. 
+            Finally five years ago I was able to pursue coding on a fulltime basis and I started coding professionally. It's been so
+            rewarding, I started as an intern and made my way up in the ranks quickly after that.
+            The journey brings me opportunities to work with amazing people and make
             products used by hundreds of people worldwide. I am very grateful
             for that.
           </p>
           <p className="text-lg pt-2">
-            Now a more technical part. I have been working as a full-stack
+            Now for the technical part. I have been working as a full-stack
             developer, centered in the JS world and all the cool stuff that it
             brings to the table, React, NextJs, Hasura, Firebase, TS, that is,
             the usual letters soup. I am always learning new things and I am
-            very excited to work with new technologies. One can easily confirm
-            that by looking at my Github, for instance, my new thing is to make
-            games with Rust. You will find a reliable coworker in me, always
+            very excited to work with new technologies.
+            You will find a reliable coworker in me, always
             willing to help and learn from others, documenting my progress, and
-            being realistic about deadlines and features. That is it for now, I
+            being realistic about deadlines and features. I
             hope you enjoyed reading this and please, feel free to contact me.
           </p>
         </section>
@@ -80,13 +76,13 @@ export default function Home() {
               />
               <InfoItem
                 title="Linkedin:"
-                value="linkedin.com/in/kauly-bohm-219b9715a"
+                value="https://www.linkedin.com/in/kauly-bohm-219b9715a"
                 linkUrl="https://www.linkedin.com/in/kauly-bohm-219b9715a"
                 iconUrl={linkedinIcon}
               />
               <InfoItem
                 title="Github:"
-                value="github.com/kauly"
+                value="https://github.com/kauly"
                 linkUrl="https://github.com/kauly"
                 iconUrl={githubIcon}
               />

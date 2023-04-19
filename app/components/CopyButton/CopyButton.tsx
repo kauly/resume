@@ -19,7 +19,7 @@ export default function CopyButton({ targetId }: ICopyButtonProps) {
     if (elem?.textContent) {
       navigator.clipboard.writeText(elem.textContent);
       setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 2000);
+      setTimeout(() => setIsCopied(false), 1000);
     }
   };
 
