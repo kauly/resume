@@ -7,6 +7,8 @@ const mont = Montserrat({
   display: "optional",
 });
 
+export const runtime = "edge";
+
 export default function RootLayout({
   children,
 }: {
