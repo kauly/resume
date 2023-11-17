@@ -25,6 +25,7 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.7.3",
     "@storybook/addon-essentials": "^7.0.0-beta.43",
     "@storybook/addon-interactions": "^7.0.0-beta.43",
     "@storybook/addon-links": "^7.0.0-beta.43",
