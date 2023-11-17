@@ -9,4 +9,4 @@ This is my online resume. It's simple but has some cool features:
 
 # Demo
 
-https://resume-kappa-indol.vercel.app/
+https://www.kauly.xyz/
