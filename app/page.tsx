@@ -11,8 +11,9 @@ import locationIcon from "@/public/icons/location.svg";
 import githubIcon from "@/public/icons/github.svg";
 import linkedinIcon from "@/public/icons/linkedin.svg";
 import ageIcon from "@/public/icons/age.svg";
+import { Skill } from "./components/Skills/Skills";
 
- export default function Home() {
+export default function Home() {
   return (
     <main className="flex flex-col h-full bg-white pb-8">
       <Navbar left={<PrintButton />} />
@@ -25,24 +26,26 @@ import ageIcon from "@/public/icons/age.svg";
             About me
           </Heading>
           <p className="text-lg">
-            I have been interested in coding for many years and I completed my first coding qualification more than 10 years ago. 
-            Although I have had a variety of jobs in the past, coding has always been my passion. 
-            Finally five years ago I was able to pursue coding on a fulltime basis and I started coding professionally. It's been so
-            rewarding, I started as an intern and made my way up in the ranks quickly after that.
-            The journey brings me opportunities to work with amazing people and make
-            products used by hundreds of people worldwide. I am very grateful
-            for that.
+            I have been interested in coding for many years and I completed my
+            first coding qualification more than 10 years ago. Although I have
+            had a variety of jobs in the past, coding has always been my
+            passion. Finally five years ago I was able to pursue coding on a
+            fulltime basis and I started coding professionally. It's been so
+            rewarding, I started as an intern and made my way up in the ranks
+            quickly after that. The journey brings me opportunities to work with
+            amazing people and make products used by hundreds of people
+            worldwide. I am very grateful for that.
           </p>
           <p className="text-lg pt-2">
             Now for the technical part. I have been working as a full-stack
             developer, centered in the JS world and all the cool stuff that it
             brings to the table, React, NextJs, Hasura, Firebase, TS, that is,
             the usual letters soup. I am always learning new things and I am
-            very excited to work with new technologies.
-            You will find a reliable coworker in me, always
-            willing to help and learn from others, documenting my progress, and
-            being realistic about deadlines and features. I
-            hope you enjoyed reading this and please, feel free to contact me.
+            very excited to work with new technologies. You will find a reliable
+            coworker in me, always willing to help and learn from others,
+            documenting my progress, and being realistic about deadlines and
+            features. I hope you enjoyed reading this and please, feel free to
+            contact me.
           </p>
         </section>
         <section id="info" className="pt-8">
@@ -87,6 +90,26 @@ import ageIcon from "@/public/icons/age.svg";
                 iconUrl={githubIcon}
               />
             </div>
+          </div>
+        </section>
+        <section id="skills" className="pt-8">
+          <Heading size="large" lined>
+            Skills
+          </Heading>
+          <div className="inline-grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
+            <Skill name="Javascript" />
+            <Skill name="Typescript" />
+            <Skill name="React" />
+            <Skill name="MUI" />
+            <Skill name="Redux" />
+            <Skill name="GraphQL" />
+            <Skill name="Web Mapping" />
+            <Skill name="NextJS" />
+            <Skill name="NodeJS" />
+            <Skill name="D3" />
+            <Skill name="Rust" />
+            <Skill name="SQL" />
+            <Skill name="Docker" />
           </div>
         </section>
         <section id="experience" className="pt-8">
