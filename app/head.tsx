@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Kauly's Resume</title>
+      <title>Kauly&apos;s Resume</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="My online resume" />
       <meta
