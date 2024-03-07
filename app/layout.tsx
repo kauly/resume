@@ -1,11 +1,18 @@
 import "./styles/globals.css";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
+
+import type { Metadata } from "next";
 
 const mont = Montserrat({
   subsets: ["latin"],
   variable: "--font-mont",
   display: "optional",
 });
+
+export const metadata: Metadata = {
+  title: "Kauly's Resume",
+  description: "My online resume",
+};
 
 export default function RootLayout({
   children,
@@ -14,11 +21,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={mont.className}>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
       <body className="h-full">{children}</body>
     </html>
   );
