@@ -10,4 +10,4 @@ function Skill({ name }: SkillProps) {
   );
 }
 
-export { Skill };
+export default Skill;

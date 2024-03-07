@@ -4,6 +4,7 @@ import Profile from "@/app/components/Profile/Profile";
 import ExperienceItem from "@/app/components/ExperienceItem/ExperienceItem";
 import Navbar from "@/app/components/Navbar/Navbar";
 import PrintButton from "@/app/components/PrintButton/PrintButton";
+import Skill from "@/app/components/Skills/Skills";
 
 import emailIcon from "@/public/icons/email.svg";
 import phoneIcon from "@/public/icons/phone.svg";
@@ -11,7 +12,6 @@ import locationIcon from "@/public/icons/location.svg";
 import githubIcon from "@/public/icons/github.svg";
 import linkedinIcon from "@/public/icons/linkedin.svg";
 import ageIcon from "@/public/icons/age.svg";
-import { Skill } from "./components/Skills/Skills";
 
 export default function Home() {
   return (
@@ -37,15 +37,14 @@ export default function Home() {
             worldwide. I am very grateful for that.
           </p>
           <p className="text-lg pt-2">
-            Now for the technical part. I have been working as a full-stack
-            developer, centered in the JS world and all the cool stuff that it
-            brings to the table, React, NextJs, Hasura, Firebase, TS, that is,
-            the usual letters soup. I am always learning new things and I am
-            very excited to work with new technologies. You will find a reliable
-            coworker in me, always willing to help and learn from others,
-            documenting my progress, and being realistic about deadlines and
-            features. I hope you enjoyed reading this and please, feel free to
-            contact me.
+            I have been working as a full-stack developer, centered at the JS
+            world and all the cool stuff that it brings to the table, React,
+            NextJs, Redux, MUI, NestJS, Hasura, Firebase, TS, etc. I am always
+            learning new things and I am very excited to work with new
+            technologies. You will find a reliable coworker in me, always
+            willing to help and learn from others, documenting my progress, and
+            being realistic about deadlines and features. I hope you enjoyed
+            reading this and please, feel free to contact me.
           </p>
         </section>
         <section id="info" className="pt-8">
@@ -73,7 +72,7 @@ export default function Home() {
             <div className="flex flex-col pt-4 md:pt-0 space-y-4">
               <InfoItem
                 title="Age:"
-                value="35"
+                value="36"
                 iconUrl={ageIcon}
                 hasCopy={false}
               />
