@@ -119,6 +119,24 @@ export default function Home() {
           </Heading>
           <div className="grid md:grid-cols-2 md:grid-flow-cols gap-4">
             <ExperienceItem
+              company="Freenlancer"
+              companyUrl=""
+              date="Feb 2023"
+              position="Full Stack Developer"
+            >
+              <p>
+                This time, I took ownership from the ground up on a different
+                vehicle fleet management software project. I had the freedom to
+                select the libraries, opting for react-map-gl with MapLibre.
+                These modern choices provided superior performance and extensive
+                customization options. Additionally, I contributed to a
+                challenging React Native project for a Human-Machine Interface
+                (HMI). Here, hardware limitations and the requirement for native
+                Java code to interact with external hardware presented unique
+                obstacles.
+              </p>
+            </ExperienceItem>
+            <ExperienceItem
               company="Sortium"
               companyUrl="https://www.linkedin.com/company/sortium/"
               date="Apr 2021 - Feb 2023"
