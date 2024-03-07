@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Heading from "@/app/components/Heading/Heading";
 import InfoItem from "@/app/components/InfoItem/InfoItem";
 import Profile from "@/app/components/Profile/Profile";
@@ -31,8 +30,8 @@ export default function Home() {
             first coding qualification more than 10 years ago. Although I have
             had a variety of jobs in the past, coding has always been my
             passion. Finally six years ago I was able to pursue coding on a
-            fulltime basis and I started coding professionally. It's been so
-            rewarding, I started as an intern and made my way up in the ranks
+            fulltime basis and I started coding professionally. It&apos;s been
+            so rewarding, I started as an intern and made my way up in the ranks
             quickly after that. The journey brings me opportunities to work with
             amazing people and make products used by hundreds of people
             worldwide. I am very grateful for that.
@@ -41,9 +40,9 @@ export default function Home() {
             I have been working as a full-stack developer, focusing on the JS
             world and all the cool things it brings to the table. I am always
             learning new things and am very excited to work with new
-            technologies. Lately, I've been delving into AI, particularly NLP
-            and LLMs, to improve user interactions with web applications. You
-            will find a reliable coworker in me, always willing to help and
+            technologies. Lately, I&apos;ve been delving into AI, particularly
+            NLP and LLMs, to improve user interactions with web applications.
+            You will find a reliable coworker in me, always willing to help and
             learn from others, documenting my progress, and remaining realistic
             about deadlines and features. I hope you enjoyed reading this.
             Please feel free to contact me.
@@ -178,10 +177,10 @@ export default function Home() {
               position="Frontend Developer"
             >
               <p>
-                I worked on maintenance and new features for the company's main
-                product, a web application for vehicle fleet management. I also
-                worked on the development of a new product, a system to track
-                all things (IoT) and not just vehicles. Here I created
+                I worked on maintenance and new features for the company&apos;s
+                main product, a web application for vehicle fleet management. I
+                also worked on the development of a new product, a system to
+                track all things (IoT) and not just vehicles. Here I created
                 functionalities such as maps, dashboards, report screens and
                 forms. All done mainly with React, Leaflet and D3.
               </p>
@@ -193,11 +192,11 @@ export default function Home() {
               position="Frontend Developer"
             >
               <p>
-                I worked on the team responsible for migrating the company's
-                main product from Java to React and Next. I was responsible for
-                creating the project skeleton and its first features and
-                screens, such as authentication, API integration, and filter
-                screens with tables.
+                I worked on the team responsible for migrating the
+                company&apos;s main product from Java to React and Next. I was
+                responsible for creating the project skeleton and its first
+                features and screens, such as authentication, API integration,
+                and filter screens with tables.
               </p>
             </ExperienceItem>
             <ExperienceItem
