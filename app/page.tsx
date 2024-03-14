@@ -120,7 +120,7 @@ export default function Home() {
             <ExperienceItem
               company="Freenlancer"
               companyUrl=""
-              date="Feb 2023"
+              date="Feb 2023 - Current Job"
               position="Full Stack Developer"
             >
               <p>
