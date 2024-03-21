@@ -104,7 +104,7 @@ export default async function Home() {
               date="Feb 2023 - Current Job"
               position="Full Stack Developer"
             >
-              <p>{t("experienceGesec")}</p>
+              <p>{t("experienceFreelancerFirst")}</p>
             </ExperienceItem>
             <ExperienceItem
               company="Sortium"
