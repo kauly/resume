@@ -2,11 +2,11 @@
 
 import clsx from "clsx";
 import Image from "next/image";
-import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 
 import brFlag from "@/public/imgs/br-flag.png";
 import usFlag from "@/public/imgs/us-flag.png";
+import { useChangeLocale, useCurrentLocale } from "@/locales/client";
 
 const LOCALES = {
   english: "en",
@@ -15,15 +15,17 @@ const LOCALES = {
 const flagSize = 42;
 
 function FlagDropdown() {
-  const { replace } = useRouter();
-  const { locale } = useParams();
+  const locale = useCurrentLocale();
+  const changeLocale = useChangeLocale();
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen((p) => !p);
-  const handleSelected = () =>
-    replace(
-      locale === LOCALES.portuguese ? LOCALES.english : LOCALES.portuguese
-    );
+  const handleSelected = () => {
+    const targetLocale =
+      locale === LOCALES.portuguese ? LOCALES.english : LOCALES.portuguese;
+    // @ts-expect-error bad library type
+    changeLocale(targetLocale);
+  };
 
   return (
     <div className="relative">

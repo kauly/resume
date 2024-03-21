@@ -2,7 +2,7 @@
 
 import Icon from "@/components/Icon/Icon";
 import printIcon from "@/public/icons/print.svg";
-import { useParams } from "next/navigation";
+import { useCurrentLocale } from "@/locales/client";
 
 type Locale = "pt" | "en";
 
@@ -36,7 +36,7 @@ const handlePrint = (locale: Locale) => {
 };
 
 export default function PrintButton() {
-  const { locale } = useParams();
+  const locale = useCurrentLocale();
   return (
     <button
       className="inline-flex items-center"
