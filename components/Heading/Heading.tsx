@@ -33,7 +33,7 @@ export default function Heading({
   return (
     <h1
       className={clsx(
-        "font-mont font-bold tracking-wider",
+        "font-mont font-bold tracking-wider capitalize",
         sizes[size],
         colors[color],
         lined &&

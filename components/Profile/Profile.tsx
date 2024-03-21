@@ -1,9 +1,12 @@
 import Image from "next/image";
 
+import Heading from "@/components/Heading/Heading";
 import profilePic from "@/public/imgs/me_ai.png";
-import Heading from "@/app/components/Heading/Heading";
+import { getI18n } from "@/locales/server";
 
-export default function Profile() {
+export default async function Profile() {
+  const t = await getI18n();
+
   return (
     <div className="flex flex-col items-center justify-center">
       <span className="border-2 border-black relative shadow-box">
@@ -16,9 +19,9 @@ export default function Profile() {
       </span>
       <span className="pt-4 text-center">
         <Heading size="large" color="blue">
-          Kauly R. Bohm
+          {t("name")}
         </Heading>
-        <Heading size="small">Software Developer</Heading>
+        <Heading size="small">{t("position")}</Heading>
       </span>
     </div>
   );

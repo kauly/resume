@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import CopyButton from "@/app/components/CopyButton/CopyButton";
+import CopyButton from "@/components/CopyButton/CopyButton";
 
 interface IInfoItemProps {
   title: string;

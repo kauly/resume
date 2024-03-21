@@ -1,7 +1,15 @@
-import "./styles/globals.css";
 import { Montserrat } from "next/font/google";
+import { PropsWithChildren } from "react";
+
+import Providers from "@/components/Providers";
 
 import type { Metadata } from "next";
+
+import "./styles/globals.css";
+
+type LayoutProps = {
+  params: { locale: string };
+};
 
 const mont = Montserrat({
   subsets: ["latin"],
@@ -16,12 +24,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+  params: { locale },
+}: PropsWithChildren<LayoutProps>) {
   return (
     <html lang="en" className={mont.className}>
-      <body className="h-full">{children}</body>
+      <body className="h-full">
+        <Providers locale={locale}>{children}</Providers>
+      </body>
     </html>
   );
 }
