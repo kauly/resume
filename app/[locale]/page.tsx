@@ -3,7 +3,6 @@ import InfoItem from "@/components/InfoItem/InfoItem";
 import Profile from "@/components/Profile/Profile";
 import ExperienceItem from "@/components/ExperienceItem/ExperienceItem";
 import Navbar from "@/components/Navbar/Navbar";
-import PrintButton from "@/components/PrintButton/PrintButton";
 import Skill from "@/components/Skills/Skills";
 
 import emailIcon from "@/public/icons/email.svg";

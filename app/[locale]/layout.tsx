@@ -5,7 +5,7 @@ import Providers from "@/components/Providers";
 
 import type { Metadata } from "next";
 
-import "./styles/globals.css";
+import "@/app/styles/globals.css";
 
 type LayoutProps = {
   params: { locale: string };
