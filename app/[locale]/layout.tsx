@@ -27,6 +27,8 @@ export function generateStaticParams() {
   return getStaticParams();
 }
 
+export const runtime = "edge";
+
 export default function RootLayout({
   children,
   params: { locale },
