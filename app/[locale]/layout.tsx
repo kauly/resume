@@ -29,7 +29,7 @@ export default function RootLayout({
   params: { locale },
 }: PropsWithChildren<LayoutProps>) {
   return (
-    <html lang="en" className={mont.className}>
+    <html lang={locale} className={mont.className}>
       <body className="h-full">
         <Providers locale={locale}>{children}</Providers>
       </body>
