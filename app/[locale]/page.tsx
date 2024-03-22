@@ -1,3 +1,5 @@
+import { setStaticParamsLocale } from "next-international/server";
+
 import Heading from "@/components/Heading/Heading";
 import InfoItem from "@/components/InfoItem/InfoItem";
 import Profile from "@/components/Profile/Profile";
@@ -13,7 +15,13 @@ import linkedinIcon from "@/public/icons/linkedin.svg";
 import ageIcon from "@/public/icons/age.svg";
 import { getI18n } from "@/locales/server";
 
-export default async function Home() {
+export default async function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  setStaticParamsLocale(locale);
+
   const t = await getI18n();
   return (
     <main className="flex flex-col h-full bg-white pb-8">
