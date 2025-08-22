@@ -2,7 +2,6 @@ import { Montserrat } from "next/font/google";
 import { PropsWithChildren } from "react";
 
 import Providers from "@/components/Providers";
-import { getStaticParams } from "@/locales/server";
 
 import type { Metadata } from "next";
 
@@ -23,9 +22,7 @@ export const metadata: Metadata = {
   description: "My online resume",
 };
 
-export function generateStaticParams() {
-  return getStaticParams();
-}
+export const runtime = "edge";
 
 export default async function RootLayout(
   props: PropsWithChildren<LayoutProps>
