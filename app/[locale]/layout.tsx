@@ -22,8 +22,6 @@ export const metadata: Metadata = {
   description: "My online resume",
 };
 
-export const runtime = "edge";
-
 export default async function RootLayout(
   props: PropsWithChildren<LayoutProps>
 ) {
