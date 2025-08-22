@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 import "@/app/styles/globals.css";
 
 type LayoutProps = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 const mont = Montserrat({
@@ -29,10 +29,15 @@ export function generateStaticParams() {
 
 export const runtime = "edge";
 
-export default function RootLayout({
-  children,
-  params: { locale },
-}: PropsWithChildren<LayoutProps>) {
+export default async function RootLayout(
+  props: PropsWithChildren<LayoutProps>
+) {
+  const params = await props.params;
+
+  const { locale } = params;
+
+  const { children } = props;
+
   return (
     <html lang={locale} className={mont.className}>
       <body className="h-full">

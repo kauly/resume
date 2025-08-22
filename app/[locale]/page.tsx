@@ -8,18 +8,18 @@ import Navbar from "@/components/Navbar/Navbar";
 import Skill from "@/components/Skills/Skills";
 
 import emailIcon from "@/public/icons/email.svg";
-import phoneIcon from "@/public/icons/phone.svg";
 import locationIcon from "@/public/icons/location.svg";
 import githubIcon from "@/public/icons/github.svg";
 import linkedinIcon from "@/public/icons/linkedin.svg";
-import ageIcon from "@/public/icons/age.svg";
 import { getI18n } from "@/locales/server";
 
-export default async function Home({
-  params: { locale },
-}: {
-  params: { locale: string };
+export default async function Home(props: {
+  params: Promise<{ locale: string }>;
 }) {
+  const params = await props.params;
+
+  const { locale } = params;
+
   setStaticParamsLocale(locale);
 
   const t = await getI18n();
@@ -49,23 +49,12 @@ export default async function Home({
                 iconUrl={emailIcon}
               />
               <InfoItem
-                title={t("phone")}
-                value="5548984538771"
-                iconUrl={phoneIcon}
-              />
-              <InfoItem
                 title={t("location")}
                 value="Brazil - São José, SC"
                 iconUrl={locationIcon}
               />
             </div>
             <div className="flex flex-col pt-4 md:pt-0 space-y-4">
-              <InfoItem
-                title={t("age")}
-                value="36"
-                iconUrl={ageIcon}
-                hasCopy={false}
-              />
               <InfoItem
                 title="Linkedin:"
                 value="https://www.linkedin.com/in/kauly-bohm-219b9715a"
