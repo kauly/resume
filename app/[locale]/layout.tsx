@@ -27,8 +27,6 @@ export function generateStaticParams() {
   return getStaticParams();
 }
 
-export const runtime = "edge";
-
 export default async function RootLayout(
   props: PropsWithChildren<LayoutProps>
 ) {
