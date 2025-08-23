@@ -38,4 +38,6 @@ next-env.d.ts
 # storybook
 storybook-static
 
+# cloudflare
 .open-next
+.wrangler
