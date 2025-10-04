@@ -9,7 +9,11 @@
   },
   "routes": [
     {
-      "pattern": "resume.kauly.xyz",
+      "pattern": "wwww.kauly.xyz",
+      "custom_domain": true
+    },
+    {
+      "pattern": "kauly.xyz",
       "custom_domain": true
     }
   ]
