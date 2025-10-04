@@ -96,6 +96,14 @@ export default async function Home(props: {
           </Heading>
           <div className="flex-col space-y-6">
             <ExperienceItem
+              company="FreedomAI"
+              companyUrl="https://www.freedomai.com.br/"
+              date="May 2024 - Aug 2025"
+              position="Full Stack Developer"
+            >
+              <p>{t("experienceFreedom")}</p>
+            </ExperienceItem>
+            <ExperienceItem
               company="Freenlancer"
               companyUrl=""
               date="Feb 2023 - Current Job"
